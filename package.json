@@ -1,15 +1,15 @@
 {
-  "name": "PARTE B",
+  "name": "tiendafachera",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CRUD de productos con Express y Pug",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  },
   "dependencies": {
     "body-parser": "^2.3.0",
     "express": "^5.2.1",
