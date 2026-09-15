@@ -1,0 +1,31 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title StoreFachera
+    script(src='https://cdn.tailwindcss.com')
+  body(class='bg-gray-900 text-gray-100 min-h-screen flex flex-col relative overflow-x-hidden')
+    header(class='bg-gray-800 border-b border-gray-700 sticky top-0 z-40')
+      div(class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8')
+        div(class='flex items-center justify-between h-16')
+          div(class='flex items-center space-x-3')
+            div(class='bg-indigo-600 p-2 rounded-lg')
+              svg(class='w-6 h-6 text-white', fill='none', stroke='currentColor', viewBox='0 0 24 24')
+                path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4')
+            span(class='font-bold text-xl tracking-tight text-white') StoreFachera
+          nav(class='flex space-x-4')
+            a(href='/', class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium') Productos
+            button#btnAbrirNuevo(class='bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-2 rounded-md text-sm font-medium transition cursor-pointer') + Nuevo Producto
+
+    main(class='flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8')
+      block content
+
+    footer(class='bg-gray-800 border-t border-gray-700 mt-auto')
+      div(class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6')
+        div(class='md:flex md:items-center md:justify-between')
+          p(class='text-sm text-gray-400 text-center md:text-left') © facherando ando
+          div(class='flex justify-center space-x-6 mt-4 md:mt-0')
+            span(class='text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded') Pug 🐶 xd
+
+    block scripts
